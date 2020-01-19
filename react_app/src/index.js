@@ -14,7 +14,8 @@ import MemoStore, { memoReducer } from './memo/Store';
 const persistConfig = {
     key: 'memo',
     storage,
-
+    blacklist: ['message', 'mode', 'fdata'],
+    whitelist: ['data']
 };
 
 
